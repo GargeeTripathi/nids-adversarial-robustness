@@ -1,0 +1,5 @@
+,ASR unconstrained,ASR constrained,Absolute reduction,Overstatement factor,Immutable violated,Direction violated,One-hot violated
+CNN,1.0,0.7157,0.2843,1.3973,1.0,0.9865,1.0
+LSTM,0.7731,0.0836,0.6895,9.2497,1.0,0.9825,1.0
+Transformer,0.4927,0.0579,0.4347,8.5041,1.0,0.9857,1.0
+GNN,0.4614,0.0657,0.3957,7.0268,1.0,0.9984,1.0

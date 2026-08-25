@@ -1,0 +1,90 @@
+{
+  "cnn": {
+    "defended_clean": {
+      "accuracy": 0.8013662171753017,
+      "precision": 0.9672296163740074,
+      "recall": 0.6738876334450246,
+      "f1": 0.7943418756314871,
+      "detection_rate": 0.6738876334450246,
+      "false_positive_rate": 0.030171969931006074,
+      "false_negative_rate": 0.32611236655497544,
+      "true_negatives": 9418,
+      "false_positives": 293,
+      "false_negatives": 4185,
+      "true_positives": 8648,
+      "n_samples": 22544,
+      "roc_auc": 0.943156795000545,
+      "pr_auc": 0.9567028366435488
+    },
+    "defended_attack_success_rate": 0.10626734505087881,
+    "undefended_attack_success_rate": 0.7156590224693073,
+    "attack_success_reduction": 0.6093916774184285,
+    "clean_accuracy_cost": 0.0011976579134137522
+  },
+  "lstm": {
+    "defended_clean": {
+      "accuracy": 0.7802075940383251,
+      "precision": 0.9213735558408216,
+      "recall": 0.6711602898776592,
+      "f1": 0.7766106126865335,
+      "detection_rate": 0.6711602898776592,
+      "false_positive_rate": 0.07568736484399136,
+      "false_negative_rate": 0.32883971012234087,
+      "true_negatives": 8976,
+      "false_positives": 735,
+      "false_negatives": 4220,
+      "true_positives": 8613,
+      "n_samples": 22544,
+      "roc_auc": 0.92422685525182,
+      "pr_auc": 0.9389029753417646
+    },
+    "defended_attack_success_rate": 0.06211540694299315,
+    "undefended_attack_success_rate": 0.08357660287598659,
+    "attack_success_reduction": 0.021461195932993442,
+    "clean_accuracy_cost": 0.028122782114975098
+  },
+  "transformer": {
+    "defended_clean": {
+      "accuracy": 0.7990596167494677,
+      "precision": 0.9268894601542417,
+      "recall": 0.702407854749474,
+      "f1": 0.7991843248514939,
+      "detection_rate": 0.702407854749474,
+      "false_positive_rate": 0.0732159406858202,
+      "false_negative_rate": 0.29759214525052596,
+      "true_negatives": 9000,
+      "false_positives": 711,
+      "false_negatives": 3819,
+      "true_positives": 9014,
+      "n_samples": 22544,
+      "roc_auc": 0.9418697192950132,
+      "pr_auc": 0.9525992906495021
+    },
+    "defended_attack_success_rate": 0.04759263368094076,
+    "undefended_attack_success_rate": 0.05793300750983431,
+    "attack_success_reduction": 0.010340373828893551,
+    "clean_accuracy_cost": -0.02701383960255499
+  },
+  "gnn": {
+    "defended_clean": {
+      "accuracy": 0.7837118523775728,
+      "precision": 0.9245544765766727,
+      "recall": 0.6751344190758202,
+      "f1": 0.7803999279409115,
+      "detection_rate": 0.6751344190758202,
+      "false_positive_rate": 0.07280403665945835,
+      "false_negative_rate": 0.32486558092417983,
+      "true_negatives": 9004,
+      "false_positives": 707,
+      "false_negatives": 4169,
+      "true_positives": 8664,
+      "n_samples": 22544,
+      "roc_auc": 0.9200694507485452,
+      "pr_auc": 0.9442105539104889
+    },
+    "defended_attack_success_rate": 0.016274238227146815,
+    "undefended_attack_success_rate": 0.06566427816280981,
+    "attack_success_reduction": 0.049390039935663,
+    "clean_accuracy_cost": -0.009669978708303772
+  }
+}

@@ -1,0 +1,22 @@
+# Normalise all text to LF in the repository AND in the working tree.
+#
+# Without this, Git on Windows converts checkouts to CRLF while the codebase on disk is
+# LF. Any tool that rewrites a file then flips its entire line-ending style, producing a
+# diff in which every line appears changed and hiding the handful that actually did.
+# That happened once during development and cost real time to untangle.
+* text=auto eol=lf
+
+# Explicit binary: never touch these.
+*.png  binary
+*.jpg  binary
+*.pt   binary
+*.npy  binary
+*.zip  binary
+*.pdf  binary
+
+# Notebooks are JSON text but diff badly; keep them LF and out of language stats.
+*.ipynb text eol=lf linguist-vendored
+
+# The NSL-KDD source files are data, not source code. Keep them byte-stable and exclude
+# them from GitHub's language detection so the repo reports as Python.
+data/raw/** linguist-vendored

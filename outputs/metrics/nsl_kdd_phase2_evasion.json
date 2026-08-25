@@ -1,0 +1,1386 @@
+{
+  "cnn": {
+    "fgsm_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0004675446115483519,
+        "attack_success_rate": 0.9993050729673384,
+        "accuracy_drop": 0.67232915140653,
+        "perturbation_linf_mean": 0.01000000350177288,
+        "perturbation_linf_max": 0.01000000536441803,
+        "perturbation_l2_mean": 0.10399534553289413,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 79.28816223144531,
+          "derived_inconsistency_rate": 1.0,
+          "direction_violation_rate": 0.9962596297264099,
+          "direction_features_decreased_mean": 2.7525908946990967,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.5188795328140259,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 79.28816223144531,
+          "derived_inconsistency_rate": 1.0,
+          "direction_violation_rate": 0.9962596297264099,
+          "direction_features_decreased_mean": 2.7525908946990967,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 1.036051869392395,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 79.28816223144531,
+          "derived_inconsistency_rate": 0.9997662305831909,
+          "direction_violation_rate": 0.9962596297264099,
+          "direction_features_decreased_mean": 2.7525908946990967,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 2.0653064250946045,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 79.28816223144531,
+          "derived_inconsistency_rate": 0.9986752867698669,
+          "direction_violation_rate": 0.9962596297264099,
+          "direction_features_decreased_mean": 2.7525908946990967,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "fgsm_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.632354087119146,
+        "attack_success_rate": 0.06011118832522585,
+        "accuracy_drop": 0.04044260889893244,
+        "perturbation_linf_mean": 0.010557443834841251,
+        "perturbation_linf_max": 0.0555555522441864,
+        "perturbation_l2_mean": 0.02740950509905815,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.4835190524429206,
+        "attack_success_rate": 0.2813296270558258,
+        "accuracy_drop": 0.1892776435751578,
+        "perturbation_linf_mean": 0.0779547244310379,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.1767892837524414,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.21982389152965012,
+        "attack_success_rate": 0.6776696780171415,
+        "accuracy_drop": 0.45297280448842825,
+        "perturbation_linf_mean": 0.14640910923480988,
+        "perturbation_linf_max": 0.20751875638961792,
+        "perturbation_l2_mean": 0.326596200466156,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.29813761396399907,
+        "attack_success_rate": 0.5751679406995599,
+        "accuracy_drop": 0.37465908205407933,
+        "perturbation_linf_mean": 0.26042863726615906,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.6876435279846191,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    },
+    "pgd_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0003896205096236266,
+        "attack_success_rate": 0.9994208941394487,
+        "accuracy_drop": 0.6724070755084548,
+        "perturbation_linf_mean": 0.010000002570450306,
+        "perturbation_linf_max": 0.01000000536441803,
+        "perturbation_l2_mean": 0.10462576150894165,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 83.68441009521484,
+          "derived_inconsistency_rate": 0.9998441338539124,
+          "direction_violation_rate": 0.9991428256034851,
+          "direction_features_decreased_mean": 2.5052599906921387,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.4834502637386322,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 82.3913345336914,
+          "derived_inconsistency_rate": 0.9999220967292786,
+          "direction_violation_rate": 0.9934543967247009,
+          "direction_features_decreased_mean": 2.545936346054077,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.9558229446411133,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 83.6444320678711,
+          "derived_inconsistency_rate": 1.0,
+          "direction_violation_rate": 0.9865191578865051,
+          "direction_features_decreased_mean": 2.504558563232422,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.0,
+        "attack_success_rate": 1.0,
+        "accuracy_drop": 0.6727966960180783,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.5927739143371582,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 83.66422271728516,
+          "derived_inconsistency_rate": 0.9996883273124695,
+          "direction_violation_rate": 0.9900256991386414,
+          "direction_features_decreased_mean": 2.6591598987579346,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "pgd_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.6344580378711135,
+        "attack_success_rate": 0.05698401667824878,
+        "accuracy_drop": 0.038338658146964855,
+        "perturbation_linf_mean": 0.010225621983408928,
+        "perturbation_linf_max": 0.03636360168457031,
+        "perturbation_l2_mean": 0.02698543108999729,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.5199096080417673,
+        "attack_success_rate": 0.22724113968033358,
+        "accuracy_drop": 0.15288708797631106,
+        "perturbation_linf_mean": 0.055764131247997284,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.1238076239824295,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.1914595184290501,
+        "attack_success_rate": 0.7156590224693073,
+        "accuracy_drop": 0.4813371775890283,
+        "perturbation_linf_mean": 0.10266753286123276,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.23923133313655853,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6727966960180783,
+        "adversarial_accuracy": 0.02579287773708408,
+        "attack_success_rate": 0.9618948343757239,
+        "accuracy_drop": 0.6470038182809943,
+        "perturbation_linf_mean": 0.2064300775527954,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.44851335883140564,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    }
+  },
+  "lstm": {
+    "fgsm_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6642250448063586,
+        "attack_success_rate": 0.07838685263271705,
+        "accuracy_drop": 0.056494973895425855,
+        "perturbation_linf_mean": 0.01000000536441803,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.07803921401500702,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.46076583862305,
+          "derived_inconsistency_rate": 0.9971168041229248,
+          "direction_violation_rate": 0.9766227602958679,
+          "direction_features_decreased_mean": 2.8358139991760254,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.5031559261279513,
+        "attack_success_rate": 0.3252243485782247,
+        "accuracy_drop": 0.21756409257383308,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.38789620995521545,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.46076583862305,
+          "derived_inconsistency_rate": 0.9907270073890686,
+          "direction_violation_rate": 0.9766227602958679,
+          "direction_features_decreased_mean": 2.8358139991760254,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.41829657913192553,
+        "attack_success_rate": 0.4597253757162936,
+        "accuracy_drop": 0.30242343956985895,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.771653413772583,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.46076583862305,
+          "derived_inconsistency_rate": 0.9837917685508728,
+          "direction_violation_rate": 0.9766227602958679,
+          "direction_features_decreased_mean": 2.8358139991760254,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.35322995402477986,
+        "attack_success_rate": 0.5777921937506757,
+        "accuracy_drop": 0.3674900646770046,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.5317462682724,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.46076583862305,
+          "derived_inconsistency_rate": 0.9808306694030762,
+          "direction_violation_rate": 0.9766227602958679,
+          "direction_features_decreased_mean": 2.8358139991760254,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "fgsm_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.7179926751344191,
+        "attack_success_rate": 0.003784192885717375,
+        "accuracy_drop": 0.002727343567365386,
+        "perturbation_linf_mean": 0.010757114738225937,
+        "perturbation_linf_max": 0.04666668176651001,
+        "perturbation_l2_mean": 0.023323792964220047,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6492636172368114,
+        "attack_success_rate": 0.09914585360579523,
+        "accuracy_drop": 0.07145640146497312,
+        "perturbation_linf_mean": 0.07633501291275024,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.14691062271595,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6311852255902751,
+        "attack_success_rate": 0.12433776624499945,
+        "accuracy_drop": 0.08953479311150939,
+        "perturbation_linf_mean": 0.10450752824544907,
+        "perturbation_linf_max": 0.20751875638961792,
+        "perturbation_l2_mean": 0.24842648208141327,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.5922231746279124,
+        "attack_success_rate": 0.1790463833927992,
+        "accuracy_drop": 0.12849684407387205,
+        "perturbation_linf_mean": 0.21749792993068695,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.51197350025177,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    },
+    "pgd_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6633678796851866,
+        "attack_success_rate": 0.07957617039679965,
+        "accuracy_drop": 0.05735213901659783,
+        "perturbation_linf_mean": 0.01000000350177288,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.07904201000928879,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 45.15335464477539,
+          "derived_inconsistency_rate": 0.9992207884788513,
+          "direction_violation_rate": 0.9756876826286316,
+          "direction_features_decreased_mean": 2.787111282348633,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.42538767240707553,
+        "attack_success_rate": 0.4097740296248243,
+        "accuracy_drop": 0.29533234629470895,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.3755336403846741,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 55.947479248046875,
+          "derived_inconsistency_rate": 0.9999220967292786,
+          "direction_violation_rate": 0.9781033396720886,
+          "direction_features_decreased_mean": 2.545546531677246,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.16364061404192318,
+        "attack_success_rate": 0.7730565466536923,
+        "accuracy_drop": 0.5570794046598613,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.6924375295639038,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 58.34107208251953,
+          "derived_inconsistency_rate": 0.9996883273124695,
+          "direction_violation_rate": 0.982545018196106,
+          "direction_features_decreased_mean": 2.455778121948242,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.07161224966882257,
+        "attack_success_rate": 0.9015028651746134,
+        "accuracy_drop": 0.6491077690329619,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.3545053005218506,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 55.97639083862305,
+          "derived_inconsistency_rate": 0.9984415173530579,
+          "direction_violation_rate": 0.9777137041091919,
+          "direction_features_decreased_mean": 2.34909987449646,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "pgd_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.7181485233382685,
+        "attack_success_rate": 0.0035679532922478106,
+        "accuracy_drop": 0.0025714953635159353,
+        "perturbation_linf_mean": 0.010217227973043919,
+        "perturbation_linf_max": 0.04666665196418762,
+        "perturbation_l2_mean": 0.022627362981438637,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6952388373723993,
+        "attack_success_rate": 0.03578765271921289,
+        "accuracy_drop": 0.025481181329385177,
+        "perturbation_linf_mean": 0.055543724447488785,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.11646474152803421,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6634458037871114,
+        "attack_success_rate": 0.08357660287598659,
+        "accuracy_drop": 0.057274214914673105,
+        "perturbation_linf_mean": 0.10310246795415878,
+        "perturbation_linf_max": 0.20751875638961792,
+        "perturbation_l2_mean": 0.2345287948846817,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.7207200187017845,
+        "adversarial_accuracy": 0.6050027273435674,
+        "attack_success_rate": 0.17342415396259056,
+        "accuracy_drop": 0.1157172913582171,
+        "perturbation_linf_mean": 0.20755800604820251,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.4817030429840088,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    }
+  },
+  "transformer": {
+    "fgsm_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6391334839865971,
+        "attack_success_rate": 0.022291095482179044,
+        "accuracy_drop": 0.014571807059923635,
+        "perturbation_linf_mean": 0.01000000350177288,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.08123037964105606,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.96586990356445,
+          "derived_inconsistency_rate": 0.9997662305831909,
+          "direction_violation_rate": 0.9985973834991455,
+          "direction_features_decreased_mean": 3.367178440093994,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.5171043403724772,
+        "attack_success_rate": 0.20967934199547025,
+        "accuracy_drop": 0.1366009506740435,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.40411341190338135,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.96586990356445,
+          "derived_inconsistency_rate": 0.9998441338539124,
+          "direction_violation_rate": 0.9985973834991455,
+          "direction_features_decreased_mean": 3.367178440093994,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.48040208836593157,
+        "attack_success_rate": 0.2747645726546668,
+        "accuracy_drop": 0.1733032026805891,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.8054146766662598,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.96586990356445,
+          "derived_inconsistency_rate": 0.9995324611663818,
+          "direction_violation_rate": 0.9985973834991455,
+          "direction_features_decreased_mean": 3.367178440093994,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.42242655653393596,
+        "attack_success_rate": 0.45416616998450354,
+        "accuracy_drop": 0.23127873451258474,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.600193977355957,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 43.96586990356445,
+          "derived_inconsistency_rate": 0.9897140264511108,
+          "direction_violation_rate": 0.9985973834991455,
+          "direction_features_decreased_mean": 3.367178440093994,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "fgsm_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6509000233772306,
+        "attack_success_rate": 0.004291333889617356,
+        "accuracy_drop": 0.0028052676692901114,
+        "perturbation_linf_mean": 0.01043542567640543,
+        "perturbation_linf_max": 0.0555555522441864,
+        "perturbation_l2_mean": 0.024412624537944794,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6339904932595651,
+        "attack_success_rate": 0.03015854094647753,
+        "accuracy_drop": 0.019714797786955507,
+        "perturbation_linf_mean": 0.07830668985843658,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.16119782626628876,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.619574534403491,
+        "attack_success_rate": 0.05554893312671355,
+        "accuracy_drop": 0.03413075664302969,
+        "perturbation_linf_mean": 0.11499708145856857,
+        "perturbation_linf_max": 0.20751875638961792,
+        "perturbation_l2_mean": 0.2793075740337372,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.5117275773396711,
+        "attack_success_rate": 0.22696388127309572,
+        "accuracy_drop": 0.14197771370684953,
+        "perturbation_linf_mean": 0.25798386335372925,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.6172417402267456,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    },
+    "pgd_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6389776357827476,
+        "attack_success_rate": 0.02252950292049112,
+        "accuracy_drop": 0.014727655263773084,
+        "perturbation_linf_mean": 0.01000000350177288,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.08097902685403824,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 44.340763092041016,
+          "derived_inconsistency_rate": 0.9998441338539124,
+          "direction_violation_rate": 0.9984415173530579,
+          "direction_features_decreased_mean": 3.436063289642334,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.46941478999454533,
+        "attack_success_rate": 0.28191679580402906,
+        "accuracy_drop": 0.18429050105197536,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.39230406284332275,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 46.03062438964844,
+          "derived_inconsistency_rate": 0.9994545578956604,
+          "direction_violation_rate": 0.9918179512023926,
+          "direction_features_decreased_mean": 3.3048391342163086,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.33164497779163093,
+        "attack_success_rate": 0.4926689712719037,
+        "accuracy_drop": 0.32206031325488976,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.7587087154388428,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 51.345436096191406,
+          "derived_inconsistency_rate": 0.9997662305831909,
+          "direction_violation_rate": 0.9857398867607117,
+          "direction_features_decreased_mean": 3.1986284255981445,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.0072469414789994545,
+        "attack_success_rate": 0.9889140541184885,
+        "accuracy_drop": 0.6464583495675212,
+        "perturbation_linf_mean": 0.20000000298023224,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.3666279315948486,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 60.90259552001953,
+          "derived_inconsistency_rate": 0.9998441338539124,
+          "direction_violation_rate": 0.988856852054596,
+          "direction_features_decreased_mean": 3.0038962364196777,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "pgd_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6511337956830048,
+        "attack_success_rate": 0.003933722732149243,
+        "accuracy_drop": 0.0025714953635159353,
+        "perturbation_linf_mean": 0.01021562423557043,
+        "perturbation_linf_max": 0.038461536169052124,
+        "perturbation_l2_mean": 0.024028662592172623,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6395231044962206,
+        "attack_success_rate": 0.022291095482179044,
+        "accuracy_drop": 0.014182186550300008,
+        "perturbation_linf_mean": 0.055636875331401825,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.12064039707183838,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.6163017221226526,
+        "attack_success_rate": 0.05793300750983431,
+        "accuracy_drop": 0.037403568923868154,
+        "perturbation_linf_mean": 0.10276082158088684,
+        "perturbation_linf_max": 0.18316924571990967,
+        "perturbation_l2_mean": 0.2389306277036667,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6537052910465206,
+        "adversarial_accuracy": 0.5316761474324009,
+        "attack_success_rate": 0.18679222791751102,
+        "accuracy_drop": 0.12202914361411984,
+        "perturbation_linf_mean": 0.2070666402578354,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.5006932020187378,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    }
+  },
+  "gnn": {
+    "fgsm_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6271331722901894,
+        "attack_success_rate": 0.05462234230001175,
+        "accuracy_drop": 0.036234707394997276,
+        "perturbation_linf_mean": 0.01000000350177288,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.07403408735990524,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 34.71775817871094,
+          "derived_inconsistency_rate": 0.9935322999954224,
+          "direction_violation_rate": 0.987765908241272,
+          "direction_features_decreased_mean": 2.7311618328094482,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5646380425465597,
+        "attack_success_rate": 0.1515329496064842,
+        "accuracy_drop": 0.09872983713862697,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.3678086996078491,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 34.71775817871094,
+          "derived_inconsistency_rate": 0.992363452911377,
+          "direction_violation_rate": 0.987765908241272,
+          "direction_features_decreased_mean": 2.7311618328094482,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5496766149770124,
+        "attack_success_rate": 0.21978151063079995,
+        "accuracy_drop": 0.11369126470817424,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.7310760617256165,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 34.71775817871094,
+          "derived_inconsistency_rate": 0.9913504123687744,
+          "direction_violation_rate": 0.987765908241272,
+          "direction_features_decreased_mean": 2.7311618328094482,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5373646068729058,
+        "attack_success_rate": 0.28779513684952424,
+        "accuracy_drop": 0.12600327281228083,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.4497407674789429,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 34.71775817871094,
+          "derived_inconsistency_rate": 0.9793500900268555,
+          "direction_violation_rate": 0.987765908241272,
+          "direction_features_decreased_mean": 2.7311618328094482,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "fgsm_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6569781033273592,
+        "attack_success_rate": 0.009632327029249384,
+        "accuracy_drop": 0.006389776357827476,
+        "perturbation_linf_mean": 0.010561536066234112,
+        "perturbation_linf_max": 0.04666668176651001,
+        "perturbation_l2_mean": 0.023873381316661835,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6277565651055872,
+        "attack_success_rate": 0.053682603077645955,
+        "accuracy_drop": 0.03561131457959947,
+        "perturbation_linf_mean": 0.07485677301883698,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.14661701023578644,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6149770123899322,
+        "attack_success_rate": 0.07294725713614472,
+        "accuracy_drop": 0.04839086729525442,
+        "perturbation_linf_mean": 0.12609700858592987,
+        "perturbation_linf_max": 0.20751875638961792,
+        "perturbation_l2_mean": 0.27054718136787415,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5728200732486558,
+        "attack_success_rate": 0.13661458945142724,
+        "accuracy_drop": 0.09054780643653082,
+        "perturbation_linf_mean": 0.24375274777412415,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.5693706274032593,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    },
+    "pgd_unconstrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6177822800592223,
+        "attack_success_rate": 0.06871843063549865,
+        "accuracy_drop": 0.04558559962596431,
+        "perturbation_linf_mean": 0.010000002570450306,
+        "perturbation_linf_max": 0.010000020265579224,
+        "perturbation_l2_mean": 0.07370201498270035,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 36.857086181640625,
+          "derived_inconsistency_rate": 0.9969609379768372,
+          "direction_violation_rate": 0.990181565284729,
+          "direction_features_decreased_mean": 2.704979419708252,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5253642951764981,
+        "attack_success_rate": 0.21003171619875485,
+        "accuracy_drop": 0.13800358450868855,
+        "perturbation_linf_mean": 0.05000000819563866,
+        "perturbation_linf_max": 0.050000011920928955,
+        "perturbation_l2_mean": 0.357073575258255,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 40.501129150390625,
+          "derived_inconsistency_rate": 0.996103823184967,
+          "direction_violation_rate": 0.9969609379768372,
+          "direction_features_decreased_mean": 2.702563762664795,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.3618016052364996,
+        "attack_success_rate": 0.46141195818160463,
+        "accuracy_drop": 0.301566274448687,
+        "perturbation_linf_mean": 0.10000001639127731,
+        "perturbation_linf_max": 0.10000002384185791,
+        "perturbation_l2_mean": 0.6814088821411133,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 44.44081497192383,
+          "derived_inconsistency_rate": 0.9990649223327637,
+          "direction_violation_rate": 0.9983636140823364,
+          "direction_features_decreased_mean": 2.927140951156616,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.12475648718148523,
+        "attack_success_rate": 0.8235639610008223,
+        "accuracy_drop": 0.5386113925037014,
+        "perturbation_linf_mean": 0.20000003278255463,
+        "perturbation_linf_max": 0.20000001788139343,
+        "perturbation_l2_mean": 1.2241134643554688,
+        "feasibility": {
+          "immutable_violation_rate": 1.0,
+          "immutable_features_changed_mean": 51.66889953613281,
+          "derived_inconsistency_rate": 0.9989869594573975,
+          "direction_violation_rate": 0.9984415173530579,
+          "direction_features_decreased_mean": 3.0686511993408203,
+          "onehot_violation_rate": 1.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 1.0,
+          "any_violation_rate_max": 1.0
+        }
+      }
+    },
+    "pgd_constrained": {
+      "0.01": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6577573443466064,
+        "attack_success_rate": 0.00845765300129214,
+        "accuracy_drop": 0.005610535338580223,
+        "perturbation_linf_mean": 0.010205814614892006,
+        "perturbation_linf_max": 0.03538459539413452,
+        "perturbation_l2_mean": 0.023252081125974655,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.05": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6376529260500273,
+        "attack_success_rate": 0.039351579936567606,
+        "accuracy_drop": 0.025714953635159354,
+        "perturbation_linf_mean": 0.05559338629245758,
+        "perturbation_linf_max": 0.1666666865348816,
+        "perturbation_l2_mean": 0.1191294938325882,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.1": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.6216784851554585,
+        "attack_success_rate": 0.06566427816280981,
+        "accuracy_drop": 0.041689394529728044,
+        "perturbation_linf_mean": 0.10269565135240555,
+        "perturbation_linf_max": 0.18316924571990967,
+        "perturbation_l2_mean": 0.23381076753139496,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      },
+      "0.2": {
+        "n_samples": 12833,
+        "clean_accuracy": 0.6633678796851866,
+        "adversarial_accuracy": 0.5887945141432245,
+        "attack_success_rate": 0.12099142487959591,
+        "accuracy_drop": 0.07457336554196213,
+        "perturbation_linf_mean": 0.20721830427646637,
+        "perturbation_linf_max": 0.43067654967308044,
+        "perturbation_l2_mean": 0.47850385308265686,
+        "feasibility": {
+          "immutable_violation_rate": 0.0,
+          "immutable_features_changed_mean": 0.0,
+          "derived_inconsistency_rate": 0.0,
+          "direction_violation_rate": 0.0,
+          "direction_features_decreased_mean": 0.0,
+          "onehot_violation_rate": 0.0,
+          "bounds_violation_rate": 0.0,
+          "integrality_violation_rate": 0.0,
+          "any_violation_rate_max": 0.0
+        }
+      }
+    }
+  }
+}

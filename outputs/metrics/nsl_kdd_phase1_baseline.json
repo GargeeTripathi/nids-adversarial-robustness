@@ -1,0 +1,470 @@
+{
+  "cnn": {
+    "parameters": 23298,
+    "epochs_run": 0,
+    "best_epoch": 0,
+    "train_seconds": 0.0,
+    "resumed_from_cache": true,
+    "test": {
+      "accuracy": 0.8025638750887154,
+      "precision": 0.9716407832545577,
+      "recall": 0.6727966960180783,
+      "f1": 0.7950642294764952,
+      "detection_rate": 0.6727966960180783,
+      "false_positive_rate": 0.025949953660797033,
+      "false_negative_rate": 0.3272033039819216,
+      "true_negatives": 9459,
+      "false_positives": 252,
+      "false_negatives": 4199,
+      "true_positives": 8634,
+      "n_samples": 22544,
+      "roc_auc": 0.9405894361702947,
+      "pr_auc": 0.9534777986052035
+    },
+    "validation": {
+      "accuracy": 0.9915855207451313,
+      "precision": 0.9952970864877265,
+      "recall": 0.9865832859579307,
+      "f1": 0.9909210300919317,
+      "detection_rate": 0.9865832859579307,
+      "false_positive_rate": 0.004059004059004059,
+      "false_negative_rate": 0.013416714042069358,
+      "true_negatives": 10060,
+      "false_positives": 41,
+      "false_negatives": 118,
+      "true_positives": 8677,
+      "n_samples": 18896,
+      "roc_auc": 0.9996314652369229,
+      "pr_auc": 0.9996023804510522
+    },
+    "per_attack": {
+      "neptune": {
+        "support": 4657,
+        "detection_rate": 0.996993772815117
+      },
+      "guess_passwd": {
+        "support": 1231,
+        "detection_rate": 0.0
+      },
+      "mscan": {
+        "support": 996,
+        "detection_rate": 0.42168674698795183
+      },
+      "warezmaster": {
+        "support": 944,
+        "detection_rate": 0.4322033898305085
+      },
+      "apache2": {
+        "support": 737,
+        "detection_rate": 0.8263229308005428
+      },
+      "satan": {
+        "support": 735,
+        "detection_rate": 0.9904761904761905
+      },
+      "processtable": {
+        "support": 685,
+        "detection_rate": 0.10802919708029197
+      },
+      "smurf": {
+        "support": 665,
+        "detection_rate": 0.9864661654135338
+      },
+      "back": {
+        "support": 359,
+        "detection_rate": 0.9526462395543176
+      },
+      "snmpguess": {
+        "support": 331,
+        "detection_rate": 0.0
+      },
+      "saint": {
+        "support": 319,
+        "detection_rate": 0.9529780564263323
+      },
+      "mailbomb": {
+        "support": 293,
+        "detection_rate": 0.0
+      },
+      "snmpgetattack": {
+        "support": 178,
+        "detection_rate": 0.0
+      },
+      "portsweep": {
+        "support": 157,
+        "detection_rate": 0.9872611464968153
+      },
+      "ipsweep": {
+        "support": 141,
+        "detection_rate": 0.9858156028368794
+      },
+      "httptunnel": {
+        "support": 133,
+        "detection_rate": 0.2706766917293233
+      },
+      "nmap": {
+        "support": 73,
+        "detection_rate": 1.0
+      },
+      "pod": {
+        "support": 41,
+        "detection_rate": 0.7073170731707317
+      },
+      "buffer_overflow": {
+        "support": 20,
+        "detection_rate": 0.1
+      }
+    }
+  },
+  "lstm": {
+    "parameters": 93890,
+    "epochs_run": 0,
+    "best_epoch": 0,
+    "train_seconds": 0.0,
+    "resumed_from_cache": true,
+    "test": {
+      "accuracy": 0.8083303761533002,
+      "precision": 0.9261966753454837,
+      "recall": 0.7207200187017845,
+      "f1": 0.8106402559270783,
+      "detection_rate": 0.7207200187017845,
+      "false_positive_rate": 0.07589331685717228,
+      "false_negative_rate": 0.2792799812982155,
+      "true_negatives": 8974,
+      "false_positives": 737,
+      "false_negatives": 3584,
+      "true_positives": 9249,
+      "n_samples": 22544,
+      "roc_auc": 0.9289076415474942,
+      "pr_auc": 0.9358549920187265
+    },
+    "validation": {
+      "accuracy": 0.9941257408975445,
+      "precision": 0.9938580527752502,
+      "recall": 0.9935190449118817,
+      "f1": 0.9936885199294934,
+      "detection_rate": 0.9935190449118817,
+      "false_positive_rate": 0.005346005346005346,
+      "false_negative_rate": 0.006480955088118249,
+      "true_negatives": 10047,
+      "false_positives": 54,
+      "false_negatives": 57,
+      "true_positives": 8738,
+      "n_samples": 18896,
+      "roc_auc": 0.9996534264868547,
+      "pr_auc": 0.9996325272851984
+    },
+    "per_attack": {
+      "neptune": {
+        "support": 4657,
+        "detection_rate": 0.9987116169207645
+      },
+      "guess_passwd": {
+        "support": 1231,
+        "detection_rate": 0.00487408610885459
+      },
+      "mscan": {
+        "support": 996,
+        "detection_rate": 0.6606425702811245
+      },
+      "warezmaster": {
+        "support": 944,
+        "detection_rate": 0.4809322033898305
+      },
+      "apache2": {
+        "support": 737,
+        "detection_rate": 0.9687924016282226
+      },
+      "satan": {
+        "support": 735,
+        "detection_rate": 0.9918367346938776
+      },
+      "processtable": {
+        "support": 685,
+        "detection_rate": 0.3708029197080292
+      },
+      "smurf": {
+        "support": 665,
+        "detection_rate": 1.0
+      },
+      "back": {
+        "support": 359,
+        "detection_rate": 0.9805013927576601
+      },
+      "snmpguess": {
+        "support": 331,
+        "detection_rate": 0.00906344410876133
+      },
+      "saint": {
+        "support": 319,
+        "detection_rate": 0.9655172413793104
+      },
+      "mailbomb": {
+        "support": 293,
+        "detection_rate": 0.0
+      },
+      "snmpgetattack": {
+        "support": 178,
+        "detection_rate": 0.0
+      },
+      "portsweep": {
+        "support": 157,
+        "detection_rate": 1.0
+      },
+      "ipsweep": {
+        "support": 141,
+        "detection_rate": 0.9929078014184397
+      },
+      "httptunnel": {
+        "support": 133,
+        "detection_rate": 0.015037593984962405
+      },
+      "nmap": {
+        "support": 73,
+        "detection_rate": 0.9863013698630136
+      },
+      "pod": {
+        "support": 41,
+        "detection_rate": 0.9512195121951219
+      },
+      "buffer_overflow": {
+        "support": 20,
+        "detection_rate": 0.45
+      }
+    }
+  },
+  "transformer": {
+    "parameters": 101890,
+    "epochs_run": 20,
+    "best_epoch": 14,
+    "train_seconds": 1211.6,
+    "resumed_from_cache": false,
+    "test": {
+      "accuracy": 0.7720457771469127,
+      "precision": 0.9234918538088948,
+      "recall": 0.6537052910465206,
+      "f1": 0.7655244787151526,
+      "detection_rate": 0.6537052910465206,
+      "false_positive_rate": 0.07156832458037277,
+      "false_negative_rate": 0.3462947089534793,
+      "true_negatives": 9016,
+      "false_positives": 695,
+      "false_negatives": 4444,
+      "true_positives": 8389,
+      "n_samples": 22544,
+      "roc_auc": 0.9192485715700057,
+      "pr_auc": 0.9433188718293669
+    },
+    "validation": {
+      "accuracy": 0.9966130397967824,
+      "precision": 0.9968134744508934,
+      "recall": 0.9959067652075043,
+      "f1": 0.9963599135479467,
+      "detection_rate": 0.9959067652075043,
+      "false_positive_rate": 0.002772002772002772,
+      "false_negative_rate": 0.004093234792495736,
+      "true_negatives": 10073,
+      "false_positives": 28,
+      "false_negatives": 36,
+      "true_positives": 8759,
+      "n_samples": 18896,
+      "roc_auc": 0.999821479014202,
+      "pr_auc": 0.9997968286311928
+    },
+    "per_attack": {
+      "neptune": {
+        "support": 4657,
+        "detection_rate": 0.997208503328323
+      },
+      "guess_passwd": {
+        "support": 1231,
+        "detection_rate": 0.00974817221770918
+      },
+      "mscan": {
+        "support": 996,
+        "detection_rate": 0.6827309236947792
+      },
+      "warezmaster": {
+        "support": 944,
+        "detection_rate": 0.3665254237288136
+      },
+      "apache2": {
+        "support": 737,
+        "detection_rate": 0.3202170963364993
+      },
+      "satan": {
+        "support": 735,
+        "detection_rate": 0.8693877551020408
+      },
+      "processtable": {
+        "support": 685,
+        "detection_rate": 0.06423357664233577
+      },
+      "smurf": {
+        "support": 665,
+        "detection_rate": 1.0
+      },
+      "back": {
+        "support": 359,
+        "detection_rate": 0.9888579387186629
+      },
+      "snmpguess": {
+        "support": 331,
+        "detection_rate": 0.00906344410876133
+      },
+      "saint": {
+        "support": 319,
+        "detection_rate": 0.9717868338557993
+      },
+      "mailbomb": {
+        "support": 293,
+        "detection_rate": 0.0
+      },
+      "snmpgetattack": {
+        "support": 178,
+        "detection_rate": 0.011235955056179775
+      },
+      "portsweep": {
+        "support": 157,
+        "detection_rate": 0.9936305732484076
+      },
+      "ipsweep": {
+        "support": 141,
+        "detection_rate": 0.9858156028368794
+      },
+      "httptunnel": {
+        "support": 133,
+        "detection_rate": 0.05263157894736842
+      },
+      "nmap": {
+        "support": 73,
+        "detection_rate": 1.0
+      },
+      "pod": {
+        "support": 41,
+        "detection_rate": 0.8780487804878049
+      },
+      "buffer_overflow": {
+        "support": 20,
+        "detection_rate": 0.2
+      }
+    }
+  },
+  "gnn": {
+    "parameters": 82690,
+    "epochs_run": 20,
+    "best_epoch": 19,
+    "train_seconds": 118.0,
+    "resumed_from_cache": false,
+    "test": {
+      "accuracy": 0.774041873669269,
+      "precision": 0.9186411338310072,
+      "recall": 0.6616535494428427,
+      "f1": 0.7692516760282659,
+      "detection_rate": 0.6616535494428427,
+      "false_positive_rate": 0.07743795695602924,
+      "false_negative_rate": 0.33834645055715734,
+      "true_negatives": 8959,
+      "false_positives": 752,
+      "false_negatives": 4342,
+      "true_positives": 8491,
+      "n_samples": 22544,
+      "roc_auc": 0.9187670445933451,
+      "pr_auc": 0.9325725161394639
+    },
+    "validation": {
+      "accuracy": 0.9985711261642676,
+      "precision": 0.9990892531876139,
+      "recall": 0.9978396816372939,
+      "f1": 0.9984640764548609,
+      "detection_rate": 0.9978396816372939,
+      "false_positive_rate": 0.000792000792000792,
+      "false_negative_rate": 0.002160318362706083,
+      "true_negatives": 10093,
+      "false_positives": 8,
+      "false_negatives": 19,
+      "true_positives": 8776,
+      "n_samples": 18896,
+      "roc_auc": 0.9999503142197855,
+      "pr_auc": 0.9999494952545901
+    },
+    "per_attack": {
+      "neptune": {
+        "support": 4657,
+        "detection_rate": 0.9995705389735882
+      },
+      "guess_passwd": {
+        "support": 1231,
+        "detection_rate": 0.007311129163281885
+      },
+      "mscan": {
+        "support": 996,
+        "detection_rate": 0.5622489959839357
+      },
+      "warezmaster": {
+        "support": 944,
+        "detection_rate": 0.19809322033898305
+      },
+      "apache2": {
+        "support": 737,
+        "detection_rate": 0.5698778833107191
+      },
+      "satan": {
+        "support": 735,
+        "detection_rate": 0.998639455782313
+      },
+      "processtable": {
+        "support": 685,
+        "detection_rate": 0.2
+      },
+      "smurf": {
+        "support": 665,
+        "detection_rate": 1.0
+      },
+      "back": {
+        "support": 359,
+        "detection_rate": 0.9944289693593314
+      },
+      "snmpguess": {
+        "support": 331,
+        "detection_rate": 0.006042296072507553
+      },
+      "saint": {
+        "support": 319,
+        "detection_rate": 0.9717868338557993
+      },
+      "mailbomb": {
+        "support": 293,
+        "detection_rate": 0.0
+      },
+      "snmpgetattack": {
+        "support": 178,
+        "detection_rate": 0.0
+      },
+      "portsweep": {
+        "support": 157,
+        "detection_rate": 0.9872611464968153
+      },
+      "ipsweep": {
+        "support": 141,
+        "detection_rate": 0.9858156028368794
+      },
+      "httptunnel": {
+        "support": 133,
+        "detection_rate": 0.0
+      },
+      "nmap": {
+        "support": 73,
+        "detection_rate": 1.0
+      },
+      "pod": {
+        "support": 41,
+        "detection_rate": 0.8780487804878049
+      },
+      "buffer_overflow": {
+        "support": 20,
+        "detection_rate": 0.3
+      }
+    }
+  }
+}

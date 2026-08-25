@@ -1,0 +1,1370 @@
+{
+  "cnn": {
+    "label_flip_attack_to_benign": {
+      "0.05": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.8200851667849539,
+        "accuracy_drop": -0.017521291696238506,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.7114470505727422,
+        "detection_rate_drop": -0.03865035455466381,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.03635053032643394,
+        "false_positive_rate_change": 0.010400576665636908,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 49835
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.8122338537970192,
+        "accuracy_drop": -0.009669978708303772,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6939920517416037,
+        "detection_rate_drop": -0.021195355723525378,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.03151065801668211,
+        "false_positive_rate_change": 0.005560704355885078,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 49835
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.8279808374733854,
+        "accuracy_drop": -0.02541696238466995,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.8197615522481103,
+        "detection_rate_drop": -0.14696485623003197,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.16115745031407683,
+        "false_positive_rate_change": 0.1352074966532798,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 49835
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.5,
+        "n_poisoned": 49835,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.37180624556423,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.6727966960180783,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.025949953660797033,
+        "details": {
+          "n_poisoned": 49835,
+          "requested_rate": 0.5,
+          "effective_rate": 0.46541274036441066,
+          "candidate_pool": 49835
+        }
+      }
+    },
+    "label_flip_benign_to_attack": {
+      "0.05": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.776792051100071,
+        "accuracy_drop": 0.025771823988644416,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6297046676537053,
+        "detection_rate_drop": 0.04309202836437309,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.028833281845330037,
+        "false_positive_rate_change": 0.0028833281845330044,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 57242
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.7581618168914124,
+        "accuracy_drop": 0.04440205819730303,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.5927686433413855,
+        "detection_rate_drop": 0.08002805267669288,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.02327257748944496,
+        "false_positive_rate_change": -0.0026773761713520736,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 57242
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.6969481902058198,
+        "accuracy_drop": 0.10561568488289563,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.4816488739967272,
+        "detection_rate_drop": 0.19114782202135117,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.018535681186283594,
+        "false_positive_rate_change": -0.0074142724745134385,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 57242
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.6770759403832506,
+        "accuracy_drop": 0.12548793470546482,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.44089456869009586,
+        "detection_rate_drop": 0.2319021273279825,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.010812480691998765,
+        "false_positive_rate_change": -0.015137472968798268,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 57242
+        }
+      }
+    },
+    "label_flip_symmetric": {
+      "0.05": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.7836231369765791,
+        "accuracy_drop": 0.018940738112136257,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6426400685732097,
+        "detection_rate_drop": 0.03015662744486869,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.030068993924415612,
+        "false_positive_rate_change": 0.004119040263618579,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 107077
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.79236160397445,
+        "accuracy_drop": 0.010202271114265415,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6608743084235954,
+        "detection_rate_drop": 0.011922387594482942,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.03387910616826279,
+        "false_positive_rate_change": 0.007929152507465759,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 107077
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.8140081618168914,
+        "accuracy_drop": -0.01144428672817599,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.7048235019091404,
+        "detection_rate_drop": -0.032026805891062105,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.04170528266913809,
+        "false_positive_rate_change": 0.015755329008341055,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 107077
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.37180624556423,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.6727966960180783,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.025949953660797033,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 107077
+        }
+      }
+    },
+    "clean_label": {
+      "0.05": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.811124911284599,
+        "accuracy_drop": -0.008561036195883553,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.689082833320346,
+        "detection_rate_drop": -0.01628613730226769,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.027597569766244466,
+        "false_positive_rate_change": 0.001647616105447433,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.0755402222275734,
+          "constrained": true
+        }
+      },
+      "0.2": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.7802519517388219,
+        "accuracy_drop": 0.022311923349893514,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6336008727499416,
+        "detection_rate_drop": 0.039195823268136754,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.025949953660797033,
+        "false_positive_rate_change": 0.0,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.07549488544464111,
+          "constrained": true
+        }
+      },
+      "0.35": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.772444996451384,
+        "accuracy_drop": 0.030118878637331425,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6338346450557157,
+        "detection_rate_drop": 0.038962050962362604,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.04438265884049017,
+        "false_positive_rate_change": 0.018432705179693136,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.07640989124774933,
+          "constrained": true
+        }
+      },
+      "0.5": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8025638750887154,
+        "poisoned_accuracy": 0.7803406671398154,
+        "accuracy_drop": 0.02222320794889998,
+        "clean_detection_rate": 0.6727966960180783,
+        "poisoned_detection_rate": 0.6574456479389075,
+        "detection_rate_drop": 0.01535104807917087,
+        "clean_false_positive_rate": 0.025949953660797033,
+        "poisoned_false_positive_rate": 0.05725465966429822,
+        "false_positive_rate_change": 0.03130470600350119,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.0763864740729332,
+          "constrained": true
+        }
+      }
+    }
+  },
+  "lstm": {
+    "label_flip_attack_to_benign": {
+      "0.05": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8342796309439319,
+        "accuracy_drop": -0.025949254790631704,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.730772227850074,
+        "detection_rate_drop": -0.010052209148289526,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.028936257851920503,
+        "false_positive_rate_change": -0.04695705900525178,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 49835
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8350780695528743,
+        "accuracy_drop": -0.02674769339957417,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.7341229642328372,
+        "detection_rate_drop": -0.013402945531052701,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.03151065801668211,
+        "false_positive_rate_change": -0.04438265884049017,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 49835
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8378726046841731,
+        "accuracy_drop": -0.02954222853087296,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.7393438790617938,
+        "detection_rate_drop": -0.018623860360009292,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.03192256204304397,
+        "false_positive_rate_change": -0.04397075481412831,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 49835
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.5,
+        "n_poisoned": 49835,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.37757274662881474,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.7207200187017845,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.07589331685717228,
+        "details": {
+          "n_poisoned": 49835,
+          "requested_rate": 0.5,
+          "effective_rate": 0.46541274036441066,
+          "candidate_pool": 49835
+        }
+      }
+    },
+    "label_flip_benign_to_attack": {
+      "0.05": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7465844570617459,
+        "accuracy_drop": 0.06174591909155425,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.610223642172524,
+        "detection_rate_drop": 0.11049637652926048,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.0732159406858202,
+        "false_positive_rate_change": -0.0026773761713520805,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 57242
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7963537970191625,
+        "accuracy_drop": 0.011976579134137633,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6662510714564015,
+        "detection_rate_drop": 0.05446894724538298,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.03171661002986304,
+        "false_positive_rate_change": -0.04417670682730924,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 57242
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8009669978708304,
+        "accuracy_drop": 0.007363378282469801,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6734980129354009,
+        "detection_rate_drop": 0.04722200576638358,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.030583873957367932,
+        "false_positive_rate_change": -0.04530944289980435,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 57242
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8099272533711852,
+        "accuracy_drop": -0.0015968772178850399,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6897062261357438,
+        "detection_rate_drop": 0.031013792566040643,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.031201729996910718,
+        "false_positive_rate_change": -0.04469158686026156,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 57242
+        }
+      }
+    },
+    "label_flip_symmetric": {
+      "0.05": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7669002838892832,
+        "accuracy_drop": 0.04143009226401695,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.648796072625263,
+        "detection_rate_drop": 0.07192394607652153,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.07702605292966738,
+        "false_positive_rate_change": 0.0011327360724951024,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 107077
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.8013662171753017,
+        "accuracy_drop": 0.006964158977998514,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6741993298527235,
+        "detection_rate_drop": 0.04652068884906102,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.030583873957367932,
+        "false_positive_rate_change": -0.04530944289980435,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 107077
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7833126330731015,
+        "accuracy_drop": 0.025017743080198662,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6405361178212421,
+        "detection_rate_drop": 0.08018390088054239,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.028009473792606324,
+        "false_positive_rate_change": -0.04788384306456596,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 107077
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.37757274662881474,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.7207200187017845,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.07589331685717228,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 107077
+        }
+      }
+    },
+    "clean_label": {
+      "0.05": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.772444996451384,
+        "accuracy_drop": 0.03588537970191619,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6565884828177355,
+        "detection_rate_drop": 0.06413153588404896,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.07445165276490577,
+        "false_positive_rate_change": -0.0014416640922665092,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.021278204396367073,
+          "constrained": true
+        }
+      },
+      "0.2": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7580287437899219,
+        "accuracy_drop": 0.05030163236337826,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.632354087119146,
+        "detection_rate_drop": 0.0883659315826385,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.07589331685717228,
+        "false_positive_rate_change": 0.0,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.0178073663264513,
+          "constrained": true
+        }
+      },
+      "0.35": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7410397444996452,
+        "accuracy_drop": 0.06729063165365501,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6012623704511806,
+        "detection_rate_drop": 0.1194576482506039,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.07424570075172485,
+        "false_positive_rate_change": -0.001647616105447433,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.017834393307566643,
+          "constrained": true
+        }
+      },
+      "0.5": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.8083303761533002,
+        "poisoned_accuracy": 0.7511533002129169,
+        "accuracy_drop": 0.05717707594038324,
+        "clean_detection_rate": 0.7207200187017845,
+        "poisoned_detection_rate": 0.6206654718304372,
+        "detection_rate_drop": 0.1000545468713473,
+        "clean_false_positive_rate": 0.07589331685717228,
+        "poisoned_false_positive_rate": 0.0764081968901246,
+        "false_positive_rate_change": 0.0005148800329523168,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.017634091898798943,
+          "constrained": true
+        }
+      }
+    }
+  },
+  "transformer": {
+    "label_flip_attack_to_benign": {
+      "0.05": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7804737402413059,
+        "accuracy_drop": -0.008427963094393198,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6707706693680355,
+        "detection_rate_drop": -0.01706537832151489,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07455462877149624,
+        "false_positive_rate_change": 0.0029863041911234733,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 49835
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7806511710432931,
+        "accuracy_drop": -0.008605393896380376,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6741993298527235,
+        "detection_rate_drop": -0.02049403880620282,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07867366903511482,
+        "false_positive_rate_change": 0.007105344454742049,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 49835
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.8297107877927609,
+        "accuracy_drop": -0.05766501064584817,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.7412919816099119,
+        "detection_rate_drop": -0.0875866905633913,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.05344454742045104,
+        "false_positive_rate_change": -0.01812377715992173,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 49835
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.5,
+        "n_poisoned": 49835,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.34128814762242726,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.6537052910465206,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.07156832458037277,
+        "details": {
+          "n_poisoned": 49835,
+          "requested_rate": 0.5,
+          "effective_rate": 0.46541274036441066,
+          "candidate_pool": 49835
+        }
+      }
+    },
+    "label_flip_benign_to_attack": {
+      "0.05": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7705376153300213,
+        "accuracy_drop": 0.0015081618168913957,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6177822800592223,
+        "detection_rate_drop": 0.03592301098729833,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.027597569766244466,
+        "false_positive_rate_change": -0.0439707548141283,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 57242
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7973296664300923,
+        "accuracy_drop": -0.025283889283179595,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6996025870801839,
+        "detection_rate_drop": -0.045897296033663215,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07352486870559159,
+        "false_positive_rate_change": 0.001956544125218826,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 57242
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7173527324343506,
+        "accuracy_drop": 0.05469304471256209,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.5573911010675602,
+        "detection_rate_drop": 0.09631418997896046,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07125939656060137,
+        "false_positive_rate_change": -0.00030892801977139284,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 57242
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7239620298083748,
+        "accuracy_drop": 0.04808374733853793,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.5521701862386036,
+        "detection_rate_drop": 0.10153510480791705,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.04901657913706106,
+        "false_positive_rate_change": -0.022551745443311705,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 57242
+        }
+      }
+    },
+    "label_flip_symmetric": {
+      "0.05": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.754568843151171,
+        "accuracy_drop": 0.017476933995741684,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.617314735447674,
+        "detection_rate_drop": 0.03639055559884663,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.06405107609926887,
+        "false_positive_rate_change": -0.007517248481103897,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 107077
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7876153300212917,
+        "accuracy_drop": -0.015569552874379,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6474713628925427,
+        "detection_rate_drop": 0.006233928153977941,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.027185665739882608,
+        "false_positive_rate_change": -0.044382658840490155,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 107077
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7355837473385379,
+        "accuracy_drop": 0.03646202980837476,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.5895737551624718,
+        "detection_rate_drop": 0.06413153588404885,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07146534857378231,
+        "false_positive_rate_change": -0.00010297600659045503,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 107077
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.34128814762242726,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.6537052910465206,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.07156832458037277,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 107077
+        }
+      }
+    },
+    "clean_label": {
+      "0.05": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7889017033356991,
+        "accuracy_drop": -0.016855926188786396,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6892386815241954,
+        "detection_rate_drop": -0.03553339047767479,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07939450108124807,
+        "false_positive_rate_change": 0.007826176500875304,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.028162458911538124,
+          "constrained": true
+        }
+      },
+      "0.2": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7561213626685592,
+        "accuracy_drop": 0.015924414478353466,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6300163640614042,
+        "detection_rate_drop": 0.023688926985116487,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.07723200494284832,
+        "false_positive_rate_change": 0.005663680362475554,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.026028437539935112,
+          "constrained": true
+        }
+      },
+      "0.35": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.783179559971611,
+        "accuracy_drop": -0.011133782824698346,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6390555598846723,
+        "detection_rate_drop": 0.014649731161848312,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.02636185768715889,
+        "false_positive_rate_change": -0.04520646689321388,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.026186665520071983,
+          "constrained": true
+        }
+      },
+      "0.5": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.7720457771469127,
+        "poisoned_accuracy": 0.7918736692689851,
+        "accuracy_drop": -0.019827892122072366,
+        "clean_detection_rate": 0.6537052910465206,
+        "poisoned_detection_rate": 0.6574456479389075,
+        "detection_rate_drop": -0.0037403568923868313,
+        "clean_false_positive_rate": 0.07156832458037277,
+        "poisoned_false_positive_rate": 0.03048089795077747,
+        "false_positive_rate_change": -0.041087426629595296,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.025885969400405884,
+          "constrained": true
+        }
+      }
+    }
+  },
+  "gnn": {
+    "label_flip_attack_to_benign": {
+      "0.05": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7731547196593329,
+        "accuracy_drop": 0.0008871540099361086,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6594716745889504,
+        "detection_rate_drop": 0.0021818748538923183,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07661414890330553,
+        "false_positive_rate_change": -0.0008238080527237096,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 49835
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7514638041163946,
+        "accuracy_drop": 0.022578069552874447,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6203537754227383,
+        "detection_rate_drop": 0.04129977402010443,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.0752754608176295,
+        "false_positive_rate_change": -0.00216249613839975,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 49835
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7770581973030518,
+        "accuracy_drop": -0.0030163236337827914,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6670303124756487,
+        "detection_rate_drop": -0.005376763032805987,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07754093296261971,
+        "false_positive_rate_change": 0.0001029760065904689,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 49835
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_attack_to_benign",
+        "poison_rate": 0.5,
+        "n_poisoned": 49835,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.43075762952448543,
+        "accuracy_drop": 0.3432842441447836,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.0,
+        "detection_rate_drop": 0.6616535494428427,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.0,
+        "false_positive_rate_change": -0.07743795695602924,
+        "details": {
+          "n_poisoned": 49835,
+          "requested_rate": 0.5,
+          "effective_rate": 0.46541274036441066,
+          "candidate_pool": 49835
+        }
+      }
+    },
+    "label_flip_benign_to_attack": {
+      "0.05": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7593594748048261,
+        "accuracy_drop": 0.014682398864442892,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6339125691576405,
+        "detection_rate_drop": 0.02774098028520222,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07486355679126763,
+        "false_positive_rate_change": -0.0025744001647616116,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 57242
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7592707594038325,
+        "accuracy_drop": 0.014771114265436536,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6329774799345438,
+        "detection_rate_drop": 0.02867606950829893,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07383379672536299,
+        "false_positive_rate_change": -0.003604160230666259,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 57242
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7299503193754435,
+        "accuracy_drop": 0.0440915542938255,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.5810800280526767,
+        "detection_rate_drop": 0.08057352139016605,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07331891669241067,
+        "false_positive_rate_change": -0.004119040263618576,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 57242
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_benign_to_attack",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.747471611071682,
+        "accuracy_drop": 0.02657026259758699,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6132626821475883,
+        "detection_rate_drop": 0.048390867295254436,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07517248481103903,
+        "false_positive_rate_change": -0.0022654721449902188,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 57242
+        }
+      }
+    },
+    "label_flip_symmetric": {
+      "0.05": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7757274662881476,
+        "accuracy_drop": -0.001685592618878573,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6627444868697888,
+        "detection_rate_drop": -0.0010909374269461036,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.0749665327978581,
+        "false_positive_rate_change": -0.0024714241581711427,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "candidate_pool": 107077
+        }
+      },
+      "0.2": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7727555003548616,
+        "accuracy_drop": 0.0012863733144073963,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6583807371620042,
+        "detection_rate_drop": 0.003272812280838533,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.0760992688703532,
+        "false_positive_rate_change": -0.0013386880856760403,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "candidate_pool": 107077
+        }
+      },
+      "0.35": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7421486870120653,
+        "accuracy_drop": 0.031893186657203754,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6012623704511806,
+        "detection_rate_drop": 0.06039117899166213,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07167130058696324,
+        "false_positive_rate_change": -0.005766656369066009,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "candidate_pool": 107077
+        }
+      },
+      "0.5": {
+        "strategy": "label_flip_symmetric",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.5691980127750177,
+        "accuracy_drop": 0.20484386089425133,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.9997662276942259,
+        "detection_rate_drop": -0.33811267825138314,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.999794047986819,
+        "false_positive_rate_change": 0.9223560910307897,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "candidate_pool": 107077
+        }
+      }
+    },
+    "clean_label": {
+      "0.05": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.05,
+        "n_poisoned": 5353,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7718239886444287,
+        "accuracy_drop": 0.002217885024840327,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6572118756331333,
+        "detection_rate_drop": 0.00444167380970939,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07671712490989599,
+        "false_positive_rate_change": -0.0007208320461332546,
+        "details": {
+          "n_poisoned": 5353,
+          "requested_rate": 0.05,
+          "effective_rate": 0.049992061787311935,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.03307163342833519,
+          "constrained": true
+        }
+      },
+      "0.2": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.2,
+        "n_poisoned": 21415,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7727998580553584,
+        "accuracy_drop": 0.0012420156139105742,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6589262058754772,
+        "detection_rate_drop": 0.002727343567365481,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07671712490989599,
+        "false_positive_rate_change": -0.0007208320461332546,
+        "details": {
+          "n_poisoned": 21415,
+          "requested_rate": 0.2,
+          "effective_rate": 0.19999626437049972,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.030777132138609886,
+          "constrained": true
+        }
+      },
+      "0.35": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.35,
+        "n_poisoned": 37476,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7661462029808375,
+        "accuracy_drop": 0.007895670688431555,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6459908049559728,
+        "detection_rate_drop": 0.015662744486869884,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07506950880444857,
+        "false_positive_rate_change": -0.002368448151580674,
+        "details": {
+          "n_poisoned": 37476,
+          "requested_rate": 0.35,
+          "effective_rate": 0.34999112787993686,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.03036257065832615,
+          "constrained": true
+        }
+      },
+      "0.5": {
+        "strategy": "clean_label_feature_collision",
+        "poison_rate": 0.5,
+        "n_poisoned": 53538,
+        "clean_accuracy": 0.774041873669269,
+        "poisoned_accuracy": 0.7684528034066714,
+        "accuracy_drop": 0.005589070262597584,
+        "clean_detection_rate": 0.6616535494428427,
+        "poisoned_detection_rate": 0.6523026572118756,
+        "detection_rate_drop": 0.009350892230967078,
+        "clean_false_positive_rate": 0.07743795695602924,
+        "poisoned_false_positive_rate": 0.07805581299557203,
+        "false_positive_rate_change": 0.0006178560395427857,
+        "details": {
+          "n_poisoned": 53538,
+          "requested_rate": 0.5,
+          "effective_rate": 0.49999533046312467,
+          "epsilon": 0.1,
+          "steps": 30,
+          "mean_attack_probability_drift": 0.03000926412642002,
+          "constrained": true
+        }
+      }
+    }
+  }
+}

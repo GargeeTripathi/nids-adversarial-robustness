@@ -1,0 +1,205 @@
+[22:27:48] Loading nsl_kdd from data/raw/nsl_kdd
+[22:27:49] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[22:27:50]   encoded features: 123
+[22:27:50]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+[22:27:50] ======================================================================
+[22:27:50] PHASE 1  baseline training
+[22:27:50] ======================================================================
+[22:27:50]   cnn: training (23,298 parameters)
+[22:37:29]     val acc 0.9916 | test acc 0.8026 DR 0.6728 FPR 0.0259 (579.4s)
+[22:37:29]   lstm: training (93,890 parameters)
+[22:44:18]     val acc 0.9941 | test acc 0.8083 DR 0.7207 FPR 0.0759 (408.7s)
+[22:44:18]   transformer: training (101,890 parameters)
+[23:01:01] Loading nsl_kdd from data/raw/nsl_kdd
+[23:01:02] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[23:01:03]   encoded features: 123
+[23:01:03]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+[23:01:03] ======================================================================
+[23:01:03] PHASE 1  baseline training
+[23:01:03] ======================================================================
+[23:01:03]   cnn: loaded cached weights
+[23:01:05]     val acc 0.9916 | test acc 0.8026 DR 0.6728 FPR 0.0259 (cached)
+[23:01:05]   wrote nsl_kdd_phase1_baseline.json
+[23:01:05]   lstm: loaded cached weights
+[23:01:06]     val acc 0.9941 | test acc 0.8083 DR 0.7207 FPR 0.0759 (cached)
+[23:01:06]   wrote nsl_kdd_phase1_baseline.json
+[23:01:06]   transformer: training (101,890 parameters)
+[23:21:20]     val acc 0.9966 | test acc 0.7720 DR 0.6537 FPR 0.0716 (1211.6s)
+[23:21:20]   wrote nsl_kdd_phase1_baseline.json
+[23:21:20]   gnn: training (82,690 parameters)
+[23:23:19]     val acc 0.9986 | test acc 0.7740 DR 0.6617 FPR 0.0774 (118.0s)
+[23:23:19]   wrote nsl_kdd_phase1_baseline.json
+[23:23:19] ======================================================================
+[23:23:19] PHASE 2  white-box evasion (FGSM, PGD) x (constrained, unconstrained)
+[23:23:19] ======================================================================
+[23:23:31]   cnn          fgsm_unconstrained     ASR by eps: 0.999 1.000 1.000 1.000
+[23:23:46]   cnn          fgsm_constrained       ASR by eps: 0.060 0.281 0.678 0.575
+[23:26:03]   cnn          pgd_unconstrained      ASR by eps: 0.999 1.000 1.000 1.000
+[23:28:51]   cnn          pgd_constrained        ASR by eps: 0.057 0.227 0.716 0.962
+[23:29:04]   lstm         fgsm_unconstrained     ASR by eps: 0.078 0.325 0.460 0.578
+[23:29:26]   lstm         fgsm_constrained       ASR by eps: 0.004 0.099 0.124 0.179
+[23:32:34]   lstm         pgd_unconstrained      ASR by eps: 0.080 0.410 0.773 0.902
+[23:35:14]   lstm         pgd_constrained        ASR by eps: 0.004 0.036 0.084 0.173
+[23:35:24]   transformer  fgsm_unconstrained     ASR by eps: 0.022 0.210 0.275 0.454
+[23:35:37]   transformer  fgsm_constrained       ASR by eps: 0.004 0.030 0.056 0.227
+[23:39:52]   transformer  pgd_unconstrained      ASR by eps: 0.023 0.282 0.493 0.989
+[23:44:25]   transformer  pgd_constrained        ASR by eps: 0.004 0.022 0.058 0.187
+[23:44:29]   gnn          fgsm_unconstrained     ASR by eps: 0.055 0.152 0.220 0.288
+[23:44:33]   gnn          fgsm_constrained       ASR by eps: 0.010 0.054 0.073 0.137
+[23:45:04]   gnn          pgd_unconstrained      ASR by eps: 0.069 0.210 0.461 0.824
+[23:45:48]   gnn          pgd_constrained        ASR by eps: 0.008 0.039 0.066 0.121
+[23:45:48]   wrote nsl_kdd_phase2_evasion.json
+[23:45:48] ======================================================================
+[23:45:48] PHASE 3  black-box transfer across architectures
+[23:45:48] ======================================================================
+[23:46:12]   [unconstrained] cnn          -> 1.000 0.025 0.050 0.001
+[23:46:42]   [unconstrained] lstm         -> 1.000 0.774 0.082 0.026
+[23:47:10]   [unconstrained] transformer  -> 1.000 0.051 0.495 0.016
+[23:47:18]   [unconstrained] gnn          -> 1.000 0.101 0.117 0.408
+[23:47:44]   [constrained  ] cnn          -> 0.717 0.034 0.015 0.022
+[23:48:19]   [constrained  ] lstm         -> 0.081 0.081 0.024 0.027
+[23:48:47]   [constrained  ] transformer  -> 0.126 0.038 0.059 0.028
+[23:48:55]   [constrained  ] gnn          -> 0.087 0.030 0.019 0.062
+[23:48:55]   wrote nsl_kdd_phase3_transfer.json
+[23:48:55] COMPLETE in 47.9 minutes
+[23:49:15] Loading nsl_kdd from data/raw/nsl_kdd
+[23:49:16] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[23:49:17]   encoded features: 123
+[23:49:17]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+[23:49:17] ======================================================================
+[23:49:17] PHASE 4  poisoning (label-flip + clean-label)
+[23:49:17] ======================================================================
+[00:18:45]   cnn          flip/attack_to_benign DR drop: +0.008 -0.013 +0.037
+[01:22:54] Loading nsl_kdd from data/raw/nsl_kdd
+[01:22:54] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[01:22:54]   encoded features: 123
+[01:22:54]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+[01:22:55] ======================================================================
+[01:22:55] PHASE 4  poisoning (label-flip + clean-label)
+[01:22:55] ======================================================================
+[01:22:55]   0/64 cells cached, 64 to run
+[01:32:06]     [1/64] cnn          label_flip_attack_to_benign rate 0.05 (eff 0.050) DR drop -0.039 (551s)
+[01:37:49]     [2/64] cnn          label_flip_attack_to_benign rate 0.20 (eff 0.200) DR drop -0.021 (343s)
+[01:41:50]     [3/64] cnn          label_flip_attack_to_benign rate 0.35 (eff 0.350) DR drop -0.147 (241s)
+[01:46:36]     [4/64] cnn          label_flip_attack_to_benign rate 0.50 (eff 0.465) DR drop +0.673 (286s)
+[01:46:36]   cnn          label_flip_attack_to_benign DR drop: -0.039 -0.021 -0.147 +0.673
+[01:51:20]     [5/64] cnn          label_flip_benign_to_attack rate 0.05 (eff 0.050) DR drop +0.043 (284s)
+[02:01:21]     [6/64] cnn          label_flip_benign_to_attack rate 0.20 (eff 0.200) DR drop +0.080 (601s)
+[02:07:47]     [7/64] cnn          label_flip_benign_to_attack rate 0.35 (eff 0.350) DR drop +0.191 (386s)
+[02:11:11]     [8/64] cnn          label_flip_benign_to_attack rate 0.50 (eff 0.500) DR drop +0.232 (204s)
+[02:11:11]   cnn          label_flip_benign_to_attack DR drop: +0.043 +0.080 +0.191 +0.232
+[02:17:30]     [9/64] cnn          label_flip_symmetric     rate 0.05 (eff 0.050) DR drop +0.030 (379s)
+[02:24:48]     [10/64] cnn          label_flip_symmetric     rate 0.20 (eff 0.200) DR drop +0.012 (438s)
+[02:32:22]     [11/64] cnn          label_flip_symmetric     rate 0.35 (eff 0.350) DR drop -0.032 (455s)
+[02:36:58]     [12/64] cnn          label_flip_symmetric     rate 0.50 (eff 0.500) DR drop +0.673 (276s)
+[02:36:58]   cnn          label_flip_symmetric     DR drop: +0.030 +0.012 -0.032 +0.673
+[02:45:00]     [13/64] cnn          clean_label              rate 0.05 (eff 0.050) DR drop -0.016 (482s)
+[02:54:20]     [14/64] cnn          clean_label              rate 0.20 (eff 0.200) DR drop +0.039 (560s)
+[02:55:30] Loading nsl_kdd from data/raw/nsl_kdd
+[02:55:30] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[02:55:31]   encoded features: 123
+[02:55:31]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+[02:55:31] ======================================================================
+[02:55:31] PHASE 4  poisoning (label-flip + clean-label)
+[02:55:31] ======================================================================
+[02:55:31]   14/64 cells cached, 50 to run
+[02:55:31]   cnn          label_flip_attack_to_benign DR drop: -0.039 -0.021 -0.147 +0.673
+[02:55:31]   cnn          label_flip_benign_to_attack DR drop: +0.043 +0.080 +0.191 +0.232
+[02:55:31]   cnn          label_flip_symmetric     DR drop: +0.030 +0.012 -0.032 +0.673
+[03:08:28]     [1/50] cnn          clean_label              rate 0.35 (eff 0.350) DR drop +0.039 (776s)
+[03:25:00]     [2/50] cnn          clean_label              rate 0.50 (eff 0.500) DR drop +0.015 (993s)
+[03:25:00]   cnn          clean_label              DR drop: -0.016 +0.039 +0.039 +0.015
+[03:31:12]     [3/50] lstm         label_flip_attack_to_benign rate 0.05 (eff 0.050) DR drop -0.010 (372s)
+[03:37:01]     [4/50] lstm         label_flip_attack_to_benign rate 0.20 (eff 0.200) DR drop -0.013 (349s)
+[03:43:01]     [5/50] lstm         label_flip_attack_to_benign rate 0.35 (eff 0.350) DR drop -0.019 (360s)
+[03:45:02]     [6/50] lstm         label_flip_attack_to_benign rate 0.50 (eff 0.465) DR drop +0.721 (121s)
+[03:45:02]   lstm         label_flip_attack_to_benign DR drop: -0.010 -0.013 -0.019 +0.721
+[03:51:00]     [7/50] lstm         label_flip_benign_to_attack rate 0.05 (eff 0.050) DR drop +0.110 (358s)
+[03:54:30]     [8/50] lstm         label_flip_benign_to_attack rate 0.20 (eff 0.200) DR drop +0.054 (210s)
+[03:57:59]     [9/50] lstm         label_flip_benign_to_attack rate 0.35 (eff 0.350) DR drop +0.047 (209s)
+[04:02:42]     [10/50] lstm         label_flip_benign_to_attack rate 0.50 (eff 0.500) DR drop +0.031 (282s)
+[04:02:42]   lstm         label_flip_benign_to_attack DR drop: +0.110 +0.054 +0.047 +0.031
+[04:08:27]     [11/50] lstm         label_flip_symmetric     rate 0.05 (eff 0.050) DR drop +0.072 (345s)
+[04:13:42]     [12/50] lstm         label_flip_symmetric     rate 0.20 (eff 0.200) DR drop +0.047 (315s)
+[04:17:22]     [13/50] lstm         label_flip_symmetric     rate 0.35 (eff 0.350) DR drop +0.080 (221s)
+[04:20:29]     [14/50] lstm         label_flip_symmetric     rate 0.50 (eff 0.500) DR drop +0.721 (186s)
+[04:20:29]   lstm         label_flip_symmetric     DR drop: +0.072 +0.047 +0.080 +0.721
+[04:26:51]     [15/50] lstm         clean_label              rate 0.05 (eff 0.050) DR drop +0.064 (383s)
+[04:33:59]     [16/50] lstm         clean_label              rate 0.20 (eff 0.200) DR drop +0.088 (427s)
+[04:42:03]     [17/50] lstm         clean_label              rate 0.35 (eff 0.350) DR drop +0.119 (484s)
+[04:51:19]     [18/50] lstm         clean_label              rate 0.50 (eff 0.500) DR drop +0.100 (556s)
+[04:51:19]   lstm         clean_label              DR drop: +0.064 +0.088 +0.119 +0.100
+[05:05:10]     [19/50] transformer  label_flip_attack_to_benign rate 0.05 (eff 0.050) DR drop -0.017 (831s)
+[05:16:35]     [20/50] transformer  label_flip_attack_to_benign rate 0.20 (eff 0.200) DR drop -0.020 (685s)
+[05:28:05]     [21/50] transformer  label_flip_attack_to_benign rate 0.35 (eff 0.350) DR drop -0.088 (690s)
+[05:33:47]     [22/50] transformer  label_flip_attack_to_benign rate 0.50 (eff 0.465) DR drop +0.654 (342s)
+[05:33:47]   transformer  label_flip_attack_to_benign DR drop: -0.017 -0.020 -0.088 +0.654
+[05:46:40]     [23/50] transformer  label_flip_benign_to_attack rate 0.05 (eff 0.050) DR drop +0.036 (773s)
+[06:01:20]     [24/50] transformer  label_flip_benign_to_attack rate 0.20 (eff 0.200) DR drop -0.046 (880s)
+[06:10:10]     [25/50] transformer  label_flip_benign_to_attack rate 0.35 (eff 0.350) DR drop +0.096 (531s)
+[06:19:49]     [26/50] transformer  label_flip_benign_to_attack rate 0.50 (eff 0.500) DR drop +0.102 (579s)
+[06:19:49]   transformer  label_flip_benign_to_attack DR drop: +0.036 -0.046 +0.096 +0.102
+[06:29:34]     [27/50] transformer  label_flip_symmetric     rate 0.05 (eff 0.050) DR drop +0.036 (585s)
+[06:39:58]     [28/50] transformer  label_flip_symmetric     rate 0.20 (eff 0.200) DR drop +0.006 (624s)
+[06:46:27]     [29/50] transformer  label_flip_symmetric     rate 0.35 (eff 0.350) DR drop +0.064 (390s)
+[06:59:22]     [30/50] transformer  label_flip_symmetric     rate 0.50 (eff 0.500) DR drop +0.654 (774s)
+[06:59:22]   transformer  label_flip_symmetric     DR drop: +0.036 +0.006 +0.064 +0.654
+[07:15:56]     [31/50] transformer  clean_label              rate 0.05 (eff 0.050) DR drop -0.036 (994s)
+[07:34:10]     [32/50] transformer  clean_label              rate 0.20 (eff 0.200) DR drop +0.024 (1094s)
+[07:53:05]     [33/50] transformer  clean_label              rate 0.35 (eff 0.350) DR drop +0.015 (1135s)
+[08:13:19]     [34/50] transformer  clean_label              rate 0.50 (eff 0.500) DR drop -0.004 (1213s)
+[08:13:19]   transformer  clean_label              DR drop: -0.036 +0.024 +0.015 -0.004
+[08:14:23]     [35/50] gnn          label_flip_attack_to_benign rate 0.05 (eff 0.050) DR drop +0.002 (64s)
+[08:15:21]     [36/50] gnn          label_flip_attack_to_benign rate 0.20 (eff 0.200) DR drop +0.041 (58s)
+[08:16:09]     [37/50] gnn          label_flip_attack_to_benign rate 0.35 (eff 0.350) DR drop -0.005 (48s)
+[08:16:42]     [38/50] gnn          label_flip_attack_to_benign rate 0.50 (eff 0.465) DR drop +0.662 (34s)
+[08:16:42]   gnn          label_flip_attack_to_benign DR drop: +0.002 +0.041 -0.005 +0.662
+[08:17:32]     [39/50] gnn          label_flip_benign_to_attack rate 0.05 (eff 0.050) DR drop +0.028 (50s)
+[08:18:21]     [40/50] gnn          label_flip_benign_to_attack rate 0.20 (eff 0.200) DR drop +0.029 (49s)
+[08:19:12]     [41/50] gnn          label_flip_benign_to_attack rate 0.35 (eff 0.350) DR drop +0.081 (51s)
+[08:20:05]     [42/50] gnn          label_flip_benign_to_attack rate 0.50 (eff 0.500) DR drop +0.048 (53s)
+[08:20:05]   gnn          label_flip_benign_to_attack DR drop: +0.028 +0.029 +0.081 +0.048
+[08:21:25]     [43/50] gnn          label_flip_symmetric     rate 0.05 (eff 0.050) DR drop -0.001 (80s)
+[08:22:05]     [44/50] gnn          label_flip_symmetric     rate 0.20 (eff 0.200) DR drop +0.003 (40s)
+[08:23:23]     [45/50] gnn          label_flip_symmetric     rate 0.35 (eff 0.350) DR drop +0.060 (79s)
+[08:23:59]     [46/50] gnn          label_flip_symmetric     rate 0.50 (eff 0.500) DR drop -0.338 (36s)
+[08:23:59]   gnn          label_flip_symmetric     DR drop: -0.001 +0.003 +0.060 -0.338
+[08:25:39]     [47/50] gnn          clean_label              rate 0.05 (eff 0.050) DR drop +0.004 (100s)
+[08:29:16]     [48/50] gnn          clean_label              rate 0.20 (eff 0.200) DR drop +0.003 (217s)
+[08:58:44]     [49/50] gnn          clean_label              rate 0.35 (eff 0.350) DR drop +0.016 (1768s)
+[10:24:47]     [50/50] gnn          clean_label              rate 0.50 (eff 0.500) DR drop +0.009 (5163s)
+[10:24:47]   gnn          clean_label              DR drop: +0.004 +0.003 +0.016 +0.009
+[10:24:47]   wrote nsl_kdd_phase4_poisoning.json
+[10:24:47] ======================================================================
+[10:24:47] PHASE 5  adversarial training defence
+[10:24:47] ======================================================================
+[10:24:47]   cnn: adversarial training
+[10:49:21]     ASR 0.716 -> 0.106 | clean accuracy cost +0.0012
+[10:49:21]   lstm: adversarial training
+[11:12:54]     ASR 0.084 -> 0.062 | clean accuracy cost +0.0281
+[11:12:54]   transformer: adversarial training
+[11:46:38]     ASR 0.058 -> 0.048 | clean accuracy cost -0.0270
+[11:46:38]   gnn: adversarial training
+[11:52:30]     ASR 0.066 -> 0.016 | clean accuracy cost -0.0097
+[11:52:30]   wrote nsl_kdd_phase5_defence.json
+[11:52:30] COMPLETE in 537.0 minutes

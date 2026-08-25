@@ -1,0 +1,14 @@
+[23:49:15] Loading nsl_kdd from data/raw/nsl_kdd
+[23:49:16] Dataset: nsl_kdd
+             train: 125973 rows (benign 67343 / 53.5%, attack 58630 / 46.5%)
+             test : 22544 rows (benign 9711 / 43.1%, attack 12833 / 56.9%)
+             features: 40 (3 categorical)
+             missing canonical features: ['dst_packets', 'src_packets']
+[23:49:17]   encoded features: 123
+[23:49:17]   dependency rules: ['serror_rate', 'rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_rerror_rate']
+D:\NIDS\src\nids\models\architectures.py:194: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=n_layers)
+[23:49:17] ======================================================================
+[23:49:17] PHASE 4  poisoning (label-flip + clean-label)
+[23:49:17] ======================================================================
+[00:18:45]   cnn          flip/attack_to_benign DR drop: +0.008 -0.013 +0.037

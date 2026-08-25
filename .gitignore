@@ -1,0 +1,32 @@
+# Python virtual environment (~200 MB of torch wheels; recreate with requirements.txt)
+.venv/
+venv/
+env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Regenerable adversarial-sample arrays (~7.6 MB).
+# These are produced deterministically from the saved baseline models:
+#   python -m nids.experiments.run_all --dataset nsl_kdd --phases 2
+outputs/adversarial/
+
+# Atomic-write temporaries from ExperimentRunner.save_json
+*.json.tmp
+*.tmp
+
+# Datasets that are NOT redistributed here (behind registration forms).
+# See README for download instructions.
+data/raw/unsw_nb15/
+data/raw/cicids2017/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
+.idea/
+.vscode/
